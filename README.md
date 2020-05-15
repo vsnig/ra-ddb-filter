@@ -2,6 +2,9 @@
 
 DynamoDB filtering for react-admin getList requests
 
+Install:
+    npm i git+https://github.com/snegostup/ra-ddb-filter
+
 Usage:
 ```javascript
   const { makeFilterVals } = require('ra-ddb-filter')
