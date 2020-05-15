@@ -6,7 +6,7 @@ Usage:
 ```javascript
   const { makeFilterVals } = require('ra-ddb-filter')
   ...
-  const filterVals = makeFilterVals(filter) // filter that react admin sends via its dataProvider ( {"ids":[["..."],["..."]]} )
+  const filterVals = makeFilterVals(filter) // filter is an object that react-admin dataProvider sends to an endpoint ( {"ids":[["..."],["..."]]} )
 
   const params = {
   TableName: tableName,
