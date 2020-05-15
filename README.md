@@ -16,7 +16,7 @@ Usage:
   // filter: 
   //  {"ids":[["00af0efb"],["1fa513ca"]]}}
   //
-  // filteVals:
+  // filterVals:
   //  {
   //    "expression":" AND (#id = :id0 OR #id = :id1)",
   //    "attrNames":{"#id":"id"},
