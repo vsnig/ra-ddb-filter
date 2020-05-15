@@ -5,10 +5,7 @@ const makeFilterVals = (filter) => {
     vals = vals.map(R.prop(0))
     const expression = '(' + vals.map((_, i) => `#${field} = :${field}${i}`).join(' OR ') + ')'
     const attrNames = { [`#${field}`]: field }
-    const attrVals = vals.reduce((acc, curr, i) => {
-      acc[`:${field}${i}`] = curr
-      return acc
-    }, {})
+    const attrVals = vals.reduce((acc, curr, i) => ({ ...acc, [`:${field}${i}`]: curr }), {})
 
     return { expression, attrNames, attrVals }
   }
