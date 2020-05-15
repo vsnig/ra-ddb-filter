@@ -1,0 +1,22 @@
+{
+  "name": "ra-ddb-filter",
+  "version": "1.0.0",
+  "description": "DynamoDB filtering for react-admin getList requests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snegostup/ra-ddb-filter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snegostup/ra-ddb-filter/issues"
+  },
+  "homepage": "https://github.com/snegostup/ra-ddb-filter#readme",
+  "dependencies": {
+    "ramda": "^0.27.0"
+  }
+}
