@@ -9,10 +9,10 @@ Usage:
   const filterVals = makeFilterVals(filter) // filter is an object that react-admin dataProvider sends to an endpoint ( {"ids":[["..."],["..."]]} )
 
   const params = {
-  TableName: tableName,
-  FilterExpression: `... ${filterVals.expression}`,
-  ExpressionAttributeNames: { ..., ...filterVals.attrNames },
-  ExpressionAttributeValues: { ..., ...filterVals.attrVals },
+    TableName: tableName,
+    FilterExpression: `... ${filterVals.expression}`,
+    ExpressionAttributeNames: { ..., ...filterVals.attrNames },
+    ExpressionAttributeValues: { ..., ...filterVals.attrVals },
   }
   const { Items } = await this.docClient.scan(params).promise()
 ```
