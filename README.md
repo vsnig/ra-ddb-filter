@@ -11,7 +11,17 @@ Usage:
 ```javascript
   const { makeFilterVals } = require('ra-ddb-filter')
   ...
-  const filterVals = makeFilterVals(filter) // filter is an object that react-admin dataProvider sends to an endpoint ( {"ids":[["..."],["..."]]} )
+  const filterVals = makeFilterVals(filter) // filter is an object that react-admin dataProvider sends to an endpoint
+  
+  // filter: 
+  //  {"ids":[["00af0efb-903e-4673-95ba-43933c10bf09"],["1fa513ca-c675-4b3a-9e76-5623887e9f69"]]}}
+  //
+  // filteVals:
+  //  {
+  //    "expression":" AND (#id = :id0 OR #id = :id1)",
+  //    "attrNames":{"#id":"id"},
+  //    "attrVals":{":id0":"00af0efb",":id1":"1fa513ca"}}
+  //   }
 
   const params = {
     TableName: tableName,
@@ -19,6 +29,7 @@ Usage:
     ExpressionAttributeNames: { ..., ...filterVals.attrNames },
     ExpressionAttributeValues: { ..., ...filterVals.attrVals },
   }
+
   const { Items } = await this.docClient.scan(params).promise()
 ```
 
