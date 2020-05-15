@@ -18,10 +18,10 @@ Usage:
   //
   // filterVals:
   //  {
-  //    "expression":" AND (#id = :id0 OR #id = :id1)",
-  //    "attrNames":{"#id":"id"},
-  //    "attrVals":{":id0":"00af0efb",":id1":"1fa513ca"}}
-  //   }
+  //    expression: " AND (#id = :id0 OR #id = :id1)",
+  //    attrNames: { "#id": "id" },
+  //    attrVals: { ":id0": "00af0efb", ":id1": "1fa513ca" }
+  //  }
 
   const params = {
     TableName: tableName,
