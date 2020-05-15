@@ -14,7 +14,7 @@ Usage:
   const filterVals = makeFilterVals(filter) // filter is an object that react-admin dataProvider sends to an endpoint
   
   // filter: 
-  //  {"ids":[["00af0efb-903e-4673-95ba-43933c10bf09"],["1fa513ca-c675-4b3a-9e76-5623887e9f69"]]}}
+  //  {"ids":[["00af0efb"],["1fa513ca"]]}}
   //
   // filteVals:
   //  {
