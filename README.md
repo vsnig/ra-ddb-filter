@@ -15,3 +15,5 @@ Usage:
   ExpressionAttributeValues: { ..., ...filterVals.attrVals },
   }
   const { Items } = await this.docClient.scan(params).promise()
+
+  
